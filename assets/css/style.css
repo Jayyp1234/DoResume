@@ -43,7 +43,8 @@ nav{
     height: 50px ; 
     position: absolute ;
     width: 100% ;
-    background-color: white ;
+    color: white;
+    background-color: var(--deepblue--) ;
     display: flex ;
     padding-left: 15px;
     justify-content: space-between ;
@@ -117,4 +118,109 @@ header img{
 header h1{
     text-align: center;
 }
+@media all and (max-width: 530px){
+    header h1{
+    font-size: 6vw;
+}
+}
+section{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.striaght-line {
+    width: 100px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    background-color: #d9d9d9;
+}
 
+.blue-line {
+    width: 35px;
+    height: 2px;
+    background-color: var(--deepblue--);
+    margin-top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h1 {
+    font-family: "Open Sans Regular";
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+.temp-grid{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row-wrap;
+    justify-content: space-around;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card .container {
+  padding: 2px 16px;
+}
+.container h4{
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.card img{
+    width: 330px;
+    height: auto;
+    border-bottom: 0.5px solid black
+}
+@media all and (max-width: 380px){
+    .card img{
+    width: 90%;
+    height: auto;
+    border-bottom: 0.5px solid black
+}
+}
+section.aboutus .container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-sm-6{
+    width: 54%;
+    align-items: center;
+}
+.col-sm-6 h2{
+    margin: 30px 0 60px;;
+}
+.col-md-5{
+    width: 46%;
+}
+.col-md-5 img{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+@media all and (max-width: 700px){
+    section.aboutus .container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.col-md-5{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+.col-sm-6{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+}
