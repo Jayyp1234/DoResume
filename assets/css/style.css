@@ -77,7 +77,7 @@ nav a {
 .menu-bar-close {
     font-size: 160%;
     display: none;
-    color: var(--deepblue--);
+    color: white;
 }
 .div2{
     position: absolute;
