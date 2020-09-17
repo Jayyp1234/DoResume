@@ -1,0 +1,38 @@
+@font-face {font-family: Open Sans Regular;src: url(../fonts/OpenSans-Regular.ttf);display:swap;}
+@font-face {font-family: Open Sans SemiBold;src: url(../fonts/OpenSans-SemiBold.ttf);display:swap;}
+@font-face { font-family: Open Sans Bold;src: url(../fonts/OpenSans-Bold.ttf);display:swap;}
+/* THESE ARE THE EXACT COLOR CODES TO USE*/
+:root {
+    --blue--:#7f9cb6;
+    --deepblue--: #265280;
+    --lightgrey--:#a9afb6;
+    --deepdrey--:606060;
+}
+/* Margin and Padding removal*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    opacity: 1.0;
+    font-family: "Open Sans Regular";
+}
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+*:hover {
+    border: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}

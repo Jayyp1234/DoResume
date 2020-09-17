@@ -38,7 +38,9 @@ ul {
 li {
     list-style: none;
 }
-
+h2,h3,h4,h5,h6{
+    text-align: center;
+}
 nav{
     height: 50px ; 
     position: absolute ;
@@ -123,6 +125,10 @@ header h1{
     font-size: 6vw;
 }
 }
+.intro {
+    display: block;
+    text-align: center;
+}
 section{
     margin-left: 10%;
     margin-right: 10%;
@@ -130,6 +136,8 @@ section{
 .striaght-line {
     width: 100px;
     height: 2px;
+    
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 3px;
@@ -138,6 +146,7 @@ section{
 
 .blue-line {
     width: 35px;
+    
     height: 2px;
     background-color: var(--deepblue--);
     margin-top: -2px;
@@ -150,6 +159,7 @@ section h1 {
     padding-top: 10px;
     letter-spacing: 1px;
 }
+
 .temp-grid{
     margin-top: 15px;
     display: flex;
@@ -223,4 +233,16 @@ section.aboutus .container{
     justify-content: center;
     margin:auto;
 }
+}
+.icons{
+    color: black;
+}
+.tips{
+    background-color: var(--deepblue--);
+    color: white;
+    position: absolute;
+    right: -10%;
+    margin-top: 15px;
+    left: -10%;
+    text-shadow: 2px 2px 4px #000000;
 }

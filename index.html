@@ -48,7 +48,10 @@
     </header>
     <section id="templates">
       <h1>TEMPLATES</h1>
+
       <div class="striaght-line"><div class="blue-line"></div></div>
+      <h2>Pick a resume template. Lets Make it more you.</h2>
+      <span class="intro">To what ever profession you are into come lets us help you build that oustanding resume.</span>
       <div class="temp-grid">
         <div class="card">
           <img src="assets/images/cascade-3-duo-blue-navy-21.png" alt="Avatar" >
@@ -71,6 +74,8 @@
       </div>
     </section>
     <section class="aboutus">
+      <h1>ABOUT US</h1>
+      <div class="striaght-line"><div class="blue-line"></div></div>
         <div class="container" style="border-color: grey; border-bottom-width: 4px; border-style: solid; border-radius: 2%;">
           <div class="col-sm-6 align-self-center">
             <br><br><h2 style="color: black; text-decoration: none;">Who are we?</h2>
@@ -85,6 +90,22 @@
           </div>
         </div>
     </section>
+    <section class="tips">
+      <h1>HEALTHY TIPS FOR A GOOD RESUME</h1>
+      <div class="striaght-line"><div class="blue-line" style="background-color: black"></div></div>
+      <div class="quotes-container">
+        <span> <blockquote>  “ Look for the keywords in the job postings - As you apply for different jobs, you should study each job description for keywords that show what the employer is looking for an ideal candidate. <br> ” </blockquote> 
+           </span>
+      </div>
+      <span class="icons">
+        <i class="icon-chevron-left" onclick="prevtag()">  </i>
+        <i class="icon-chevron-right" onclick="nexttag()"> </i>
+      </span>
+    </section>
+    <section class="team"> 
+      <h1>MEET THE TEAM</h1>
+      <div class="striaght-line"><div class="blue-line"></div></div>
+    </section>
     
     
 </body>
@@ -92,7 +113,8 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-
+    setInterval(nexttag , 2500);  
+    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40+"px");  
   });
   function slideMenu(){
     $(".menu-bar-close").show().fadeIn(2000);
@@ -105,5 +127,27 @@
     $(".menu-bar-open").show().fadeIn(2000);
      $(".div2").css({"display":"none" ,"overflow":"hidden"});
   }
+  var arrayQuote = [" “ Look for the keywords in the job postings -.” " , " “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ” "];
+  var currentIndex = 1;
+  var nexttag = ()=> {
+    $("blockquote").html(arrayQuote[currentIndex]);
+    currentIndex += 1;
+    if(currentIndex === arrayQuote.length){
+      currentIndex = 0;
+    }
+  }
+  var prevtag = ()=> {
+    $("blockquote").html(arrayQuote[currentIndex]);
+    currentIndex += -1;
+    if(currentIndex === 0){
+      currentIndex = (arrayQuote.length-1);
+    }
+  }
+  $(window).on("resize" , function(){
+    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40+"px");
+  })
+
+
+
 </script>
 </html>
