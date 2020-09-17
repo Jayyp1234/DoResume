@@ -115,7 +115,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     setInterval(nexttag , 10000);  
-    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() +"px");  
+    //$(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40 +"px");  
   });
   function slideMenu(){
     $(".menu-bar-close").show().fadeIn(2000);
@@ -144,9 +144,9 @@
       currentIndex = (arrayQuote.length-1);
     }
   }
-  $(window).on("resize" , function(){
-    $(".team").css("margin-top" , ""+ $(".tips").innerHeight()+"px");
-  });
+  /*$(window).on("resize" , function(){
+    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40+"px");
+  });*/
 
 
 
