@@ -94,13 +94,14 @@
       <h1>HEALTHY TIPS FOR A GOOD RESUME</h1>
       <div class="striaght-line"><div class="blue-line" style="background-color: black"></div></div>
       <div class="quotes-container">
-        <span> <blockquote>  “ Look for the keywords in the job postings - As you apply for different jobs, you should study each job description for keywords that show what the employer is looking for an ideal candidate. <br> ” </blockquote> 
+        <span> <blockquote>  “ Look for the keywords in the job postings - As you apply for different jobs, you should study each job description for keywords that show what the employer is looking for an ideal candidate.<br> Include those keywords in your resume where relevant.  ” </blockquote> 
            </span>
-      </div>
-      <span class="icons">
+           <span class="icons">
         <i class="icon-chevron-left" onclick="prevtag()">  </i>
         <i class="icon-chevron-right" onclick="nexttag()"> </i>
       </span>
+      </div>
+      
     </section>
     <section class="team"> 
       <h1>MEET THE TEAM</h1>
@@ -113,8 +114,8 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    setInterval(nexttag , 2500);  
-    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40+"px");  
+    setInterval(nexttag , 10000);  
+    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() +"px");  
   });
   function slideMenu(){
     $(".menu-bar-close").show().fadeIn(2000);
@@ -127,7 +128,7 @@
     $(".menu-bar-open").show().fadeIn(2000);
      $(".div2").css({"display":"none" ,"overflow":"hidden"});
   }
-  var arrayQuote = [" “ Look for the keywords in the job postings -.” " , " “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ” "];
+  var arrayQuote = [" “ Look for the keywords in the job postings - As you apply for different jobs, you should study each job description for keywords that show what the employer is looking for an ideal candidate.<br> Include those keywords in your resume where relevant.  ” " , " “ Review resume examples for your industry - When crafting your resume, you might study examples of resumes from your industry for inspiration and best practices. While there are many ways you can use resume samples, you should always <b> Make it Brief</b> ” ", " “ Include only the most relevant information and put the most important information first - While you might have extensive work or educational experience, it’s important to keep your resume as brief as possible without leaving out key information. Hiring managers don’t spend a lot of time reading each resume.” ", " “ Your resume should be written using active language without extraneous words. This means using power words, such as “achieved,” “earned,” “completed” or “accomplished.” ” ", "“ Decide whether you need a unique resume for different jobs - Before submitting an application, you should ask yourself, “Have I made it as easy as possible for this employer to see that I’m qualified?”. If you’re applying for a job that has unique requirements, you may need another version of your resume to fully demonstrate your qualifications” ", " “ Campus Ambassador/Student Partner/Club Leads Experience don't count ” "," “ Optimize your LinkedIn to a level, that you don't require a Resume at the first place. Build your own brand. And that brand will surely have returns <br> <b> <i>Open a LinkedIn account if you don't have one.</i></b>” ", " “ Always name your Resume as: YOUR_NAME_RESUME.pdf. Many people make mistakes of keeping it like 1.pdf or Untitled.pdf. For example, my Resume is titled as HARSH_BARDHAN_MISHRA.pdf ” "," “ Never make Spelling Mistakes. I repeat, Never. ” "," “ Always keep a healthy mix of Technical and Non-Technical Skills. Keep a focus on your Problem Solving and Team Playing Skills. This is what recruiters target most.” "];
   var currentIndex = 1;
   var nexttag = ()=> {
     $("blockquote").html(arrayQuote[currentIndex]);
@@ -144,8 +145,8 @@
     }
   }
   $(window).on("resize" , function(){
-    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40+"px");
-  })
+    $(".team").css("margin-top" , ""+ $(".tips").innerHeight()+"px");
+  });
 
 
 
