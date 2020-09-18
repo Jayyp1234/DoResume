@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <!-- Google -->
+      <title>DoResume | Build Your Resume Correctly</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Okeke Johnpaul">
+      <meta name="description" content="Convert your assignments into handwritten ones">
+      <meta name="keyword" content="DoResume, resume generator, resume editor, resume writing, resume builder,
+                  resume">
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- Icons -->
+      <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+      <!--Fonts-->
+      <link rel="preload" href="assets/fonts/OpenSans-Regular.ttf" as='font' >
+      <link rel="preload" href="assets/fonts/OpenSans-SemiBold.ttf" as='font' >
+      <link rel="preload" href="assets/fonts/OpenSans-Bold.ttf" as='font' >
+</head>
+<body>
+    <nav style="top: 0%">
+        <a href="index.html"> <h3>DO RESUME</h3> </a>
+        <!--Menu bar-->
+        <div class="menu-bar-open" id="menu-bar-open" onclick="slideMenu()">
+          <b class="icon-bars"></b>
+        </div>
+        <div class="menu-bar-close" id="menu-bar-close" onclick="slidEMenu()">
+          <b class="icon-close"></b>
+        </div>
+        <div class="div">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="template.html" class="nav-link active" >Templates</a>
+          <a href="guidelines.html" class="nav-link">Guidelines</a>
+          <a href="#" class="nav-link" style="padding-right: 4.6px;">Log In</a>
+        </div>
+          
+    </nav>
+        <div class="div2" style="margin-top: -19px;">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="template.html" class="nav-link">Templates</a>
+          <a href="guidelines.html" class="nav-link">Guidelines</a>
+          <a href="#" class="nav-link" >Log In</a>
+        </div>
+
+    <section id="templates" style="margin-top: 70px;">
+      <h2>Pick a resume template. Lets Make it more you.</h2>
+      <span class="intro">To what ever profession you are into come lets us help you build that oustanding resume.</span>
+      <div class="temp-grid">
+        <div class="card">
+          <img src="assets/images/cascade-3-duo-blue-navy-21.png" alt="Avatar" >
+            <div class="container">
+              <h4><b>Basic</b></h4>
+            </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/concept-10-classic-blue-navy-312.png" alt="Avatar" >
+          <div class="container">
+            <h4><b>Basic</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/valera-11-classic-silver-dark-332.png" alt="Avatar">
+            <div class="container">
+              <h4><b>Basic</b></h4>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+     <div class="footer-top">
+          <div class="container">
+               <div class="row">
+                    <div class="segment-four" style="align-items: right;">
+                         <h1 style="color: #fff; text-transform: uppercase;text-align: center;">Our Newsletter</h1>
+                         <div class="border"></div>
+                         <p>Enter Your Email to get our news and updates.</p>
+                         <form action="" class="newsletter-form">
+                              <input type="text" class="txtb" placeholder="Enter Your Email"><br><br>
+                              <input type="submit" class="btn btn-primary" value="Submit">
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="footer-bottom-text" style="background: black;color: white; display: grid;
+    height: 50px;">
+          <p style="color: white;text-align: center;">Made with &#10084;</p>
+     </div>
+</footer>
+</body>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+  });
+
+  function slideMenu(){
+    $(".menu-bar-close").show().fadeIn(2000);
+    $(".menu-bar-open").hide().fadeOut(2000);
+    $(".div2").css("display","grid");
+    $(".div2").css("overflow","none");
+  }
+  function slidEMenu(){
+    $(".menu-bar-close").hide().fadeOut(2000);
+    $(".menu-bar-open").show().fadeIn(2000);
+     $(".div2").css({"display":"none" ,"overflow":"hidden"});
+  }
+</script>
+</html>

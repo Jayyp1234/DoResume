@@ -29,17 +29,17 @@
           <b class="icon-close"></b>
         </div>
         <div class="div">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="#templates" class="nav-link">Templates</a>
-          <a href="overlay.html" class="nav-link">About Us</a>
-          <a href="overlay.html" class="nav-link">Log In</a>
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="template.html" class="nav-link">Templates</a>
+          <a href="guidelines.html" class="nav-link">Guidelines</a>
+          <a href="#" class="nav-link" style="padding-right: 4.6px;">Log In</a>
         </div>
           
     </nav>
         <div class="div2">
           <a href="index.html" class="nav-link">Home</a>
-          <a href="explore.html" class="nav-link">Templates</a>
-          <a href="overlay.html" class="nav-link">About Us</a>
+          <a href="template.html" class="nav-link">Templates</a>
+          <a href="guidelines.html" class="nav-link">Guidelines</a>
           <a href="overlay.html" class="nav-link">Log In</a>
         </div>
     <header>
@@ -128,7 +128,8 @@
                </div>
           </div>
      </div>
-     <div class="footer-bottom-text" style="background: black;color: white">
+     <div class="footer-bottom-text" style="background: black;color: white; display: grid;
+    height: 50px;">
           <p style="color: white;text-align: center;">Made with &#10084;</p>
      </div>
 </footer>
@@ -140,8 +141,9 @@
 <script type="text/javascript">
   $(document).ready(function(){
     setInterval(nexttag , 10000);  
-    //$(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40 +"px");  
+    $("blockquote").append("<a href='guidelines.html' style='color:var(--blue--);text-decoration:underline;text-shadow:1px 1px 2px #000000;'> Click Here to read full guideliness to a perfect Resume.</a>");
   });
+
   function slideMenu(){
     $(".menu-bar-close").show().fadeIn(2000);
     $(".menu-bar-open").hide().fadeOut(2000);
@@ -157,6 +159,7 @@
   var currentIndex = 1;
   var nexttag = ()=> {
     $("blockquote").html(arrayQuote[currentIndex]);
+    $("blockquote").append("<a href='guidelines.html' style='color:var(--blue--);text-decoration:underline;text-shadow:1px 1px 2px #000000;'> Click Here to read full guideliness to a perfect Resume.</a>");
     currentIndex += 1;
     if(currentIndex === arrayQuote.length){
       currentIndex = 0;
@@ -169,11 +172,6 @@
       currentIndex = (arrayQuote.length-1);
     }
   }
-  /*$(window).on("resize" , function(){
-    $(".team").css("margin-top" , ""+ $(".tips").innerHeight() + 40+"px");
-  });*/
-
-
 
 </script>
 </html>

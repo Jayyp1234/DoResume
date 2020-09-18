@@ -1,6 +1,6 @@
-@font-face {font-family: Open Sans Regular;src: url(../fonts/OpenSans-Regular.ttf);display:swap;}
-@font-face {font-family: Open Sans SemiBold;src: url(../fonts/OpenSans-SemiBold.ttf);display:swap;}
-@font-face { font-family: Open Sans Bold;src: url(../fonts/OpenSans-Bold.ttf);display:swap;}
+@font-face {font-family: Open Sans Regular;src: url(../assets/fonts/OpenSans-Regular.ttf);display:swap;}
+@font-face {font-family: Open Sans SemiBold;src: url(../assets/fonts/OpenSans-SemiBold.ttf);display:swap;}
+@font-face { font-family: Open Sans Bold;src: url(../assets/fonts/OpenSans-Bold.ttf);display:swap;}
 /* THESE ARE THE EXACT COLOR CODES TO USE*/
 :root {
     --blue--:#7f9cb6;
@@ -12,6 +12,7 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
     background-color: white;
     opacity: 1.0;
     font-family: "Open Sans Regular";
@@ -35,4 +36,33 @@ ul {
 }
 li {
     list-style: none;
+}
+h2,h1,h3,h4,h5,h6{
+    margin: 0px;
+    font-family: "Open Sans Regular";
+    color: white;
+}
+.side-bar{
+    width: 260px;
+    padding-top: 12px;
+    padding-left: 10px;
+    background-color: var(--deepblue--);
+}
+.side-bar h2{
+    margin-bottom: 10px;
+    word-spacing: 5px;
+}
+.side-bar div{
+    margin-left: -10px;
+}
+.side-bar label{
+    width: 100%;
+    font-weight: bold;
+    display: grid;
+    color: white;
+    padding-left: 10px;
+    background-color: var(--blue--);
+}
+.main-content{
+    
 }
