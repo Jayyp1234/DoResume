@@ -142,7 +142,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     setInterval(nexttag , 10000);  
-    $("blockquote").append("<a href='guidelines.html' style='color:var(--blue--);text-decoration:underline;text-shadow:1px 1px 2px #000000;'> Click Here to read full guideliness to a perfect Resume.</a>");
+    $("blockquote").append("<a href='guidelines.html' style='color:var(--blue--);text-decoration:underline;'> Click Here to read full guideliness to a perfect Resume.</a>");
   });
 
   function slideMenu(){
@@ -160,7 +160,7 @@
   var currentIndex = 1;
   var nexttag = ()=> {
     $("blockquote").html(arrayQuote[currentIndex]);
-    $("blockquote").append("<a href='guidelines.html' style='color:var(--blue--);text-decoration:underline;text-shadow:1px 1px 2px #000000;'> Click Here to read full guideliness to a perfect Resume.</a>");
+    $("blockquote").append("<a href='guidelines.html' style='color:var(--blue--);text-decoration:underline;'> Click Here to read full guideliness to a perfect Resume.</a>");
     currentIndex += 1;
     if(currentIndex === arrayQuote.length){
       currentIndex = 0;
