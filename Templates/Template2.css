@@ -1,0 +1,97 @@
+@font-face {font-family: "Open Sans Regular";src: url(../fonts/OpenSans-Regular.ttf);display:swap;}
+@font-face {font-family: "Open Sans SemiBold";src: url(../fonts/OpenSans-SemiBold.ttf);display:swap;}
+@font-face { font-family: "Open Sans Bold";src: url(../fonts/OpenSans-Bold.ttf);display:swap;}
+/* THESE ARE THE EXACT COLOR CODES TO USE*/
+:root {
+    --blue--:#7f9cb6;
+    --deepblue--: #265280;
+    --lightgrey--:#a9afb6;
+    --deepdrey--:606060;
+}
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    color: var(--deepblue--);
+    font-family: "Open Sans Regular";
+}
+b{
+    color: black;
+}
+.container{
+    width: 100%;
+    padding: 2%;
+}
+.main{
+    padding: 2%;
+}
+.sect{
+     margin-bottom: 2px;
+}
+.cols {
+    /* padding: 2%; */
+    margin-bottom: 30px;
+    float: left;
+}
+.cols-3{
+    width: 25%;
+}
+.cols-6{
+    width: 50%;
+}
+.cols-9{
+    width: 75%;
+
+}
+.cols-12{
+    width: 100%;
+}
+.cols span p{
+    margin-left: 20px;
+}
+#side{
+    height: 100%;
+    padding:auto 5px;
+    color: white;
+    background-color: var(--deepblue--);
+    margin-bottom: 30%;
+    
+}
+#side div span{
+    display: block;
+    text-align: right;
+}
+.intro{
+    margin-bottom: 30px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.fa{
+    display: block;
+    color: white;
+}
+.icon{
+    padding: 3px;
+    border: 1px solid black;
+    background-color: var(--deepblue--);
+    border-radius: 50%;
+    margin:0px 5px 0px 0px;
+}
+#icon{
+    font-size: 5px;
+    margin: 5px;
+}
+.fa-circle{
+    color: var(--deepblue--);
+    border: none;
+    padding: none;
+    font-size: 5px;
+}
+.right{
+    padding-left: 300px;
+    text-align: right;
+}
