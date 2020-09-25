@@ -1,0 +1,3 @@
+var resume = {
+	name : [],
+}

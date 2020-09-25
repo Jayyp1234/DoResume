@@ -17,8 +17,33 @@
       <link rel="preload" href="assets/fonts/OpenSans-Regular.ttf" as='font' >
       <link rel="preload" href="assets/fonts/OpenSans-SemiBold.ttf" as='font' >
       <link rel="preload" href="assets/fonts/OpenSans-Bold.ttf" as='font' >
+      <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<style type="text/css">
+  input{
+    border: 1px solid black;
+  }
+  input:hover{
+    border: 1px solid black;
+  }
+</style>
 <body>
-      
+      <div class="container">
+        <input type="text" name="full_name" class="fullname"> 
+
+        <button class="submit" onclick="pusher()"> <a href="Templates/temp1.html">Submit</button>     
+      </div>
+    </div>
+    
 </body>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    alert();
+  });
+  var pusher = ()=>{
+    resume.name.push($(".fullname").val());
+  }
+</script>
 </html>
